@@ -7,6 +7,8 @@
   --text-color-contacts: rgba(255, 255, 255, 0.6);
   --bgc-team-btn-portfolio: #f5f4fa;
   --text-color-logo-header: #000000;
+  --btn-active: #188ce8;
+  --header-border: #ececec;
 }
 
 body {
@@ -14,6 +16,44 @@ body {
   background-color: var(--accent-white);
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+  outline: 2px solid tomato;
 }
 
 .list {
@@ -33,7 +73,12 @@ body {
 }
 
 .logo-header {
-  color: var(--text-color-logo-header)
+  color: var(--text-color-logo-header);
+}
+
+/* Page Header */
+.page-header {
+  background-color: #ccc;
 }
 
 /* Site nav */
@@ -71,6 +116,7 @@ body {
 
 .hero {
   background-color: var(--bgc-hero-footer);
+  text-align: center;
 }
 
 .hero-title {
@@ -80,14 +126,17 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 /* Button */
 .btn {
   color: var(--main-text-color);
   background-color: var(--accent-white);
-  font-family: inherit;
   cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  display: inline-block;
 }
 
 .btn.studio {
@@ -97,12 +146,14 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
+  min-width: 216px;
 }
 
 .btn.studio:hover,
 .btn.studio:focus {
   color: var(--accent-white);
-  background-color: transparent;
+  background-color: var(--btn-active);
 }
 
 .btn.portfolio {
@@ -111,6 +162,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  padding: 6px 22px;
+  min-width: 73px;
 }
 
 .btn.portfolio:hover,
