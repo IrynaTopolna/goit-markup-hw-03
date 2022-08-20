@@ -44,6 +44,7 @@ p {
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 .container {
@@ -52,7 +53,6 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
   outline: 2px solid tomato;
 }
 
@@ -78,7 +78,7 @@ ul {
 
 /* Page Header */
 .page-header {
-  background-color: #ccc;
+  background-color: var(--accent-white);
 }
 
 /* Site nav */
@@ -173,11 +173,20 @@ ul {
 }
 
 /* Section */
+.section {
+  padding-bottom: 94px;
+}
+
+.section.top {
+  padding-top: 94px;
+}
 .section-title {
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .advantage-title {
@@ -185,6 +194,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantage-paragraph {
@@ -193,17 +203,32 @@ ul {
   line-height: 1.71;
 }
 
+.team-photo {
+  margin-bottom: 30px;
+}
+
 .team-title {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 10px;
 }
 
 .team-paragraph {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 30px;
+}
+
+.section.team {
+  background-color: var(--bgc-team-btn-portfolio);
+  padding-top: 94px;
+}
+
+.examples-photo {
+  margin-bottom: 20px;
 }
 
 .examples-title {
@@ -212,16 +237,14 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .examples-paragraph {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
-}
-
-.section.team {
-  background-color: var(--bgc-team-btn-portfolio);
+  margin-bottom: 20px;
 }
 
 .visually-hidden {
@@ -245,6 +268,8 @@ ul {
 
 .footer {
   background-color: var(--bgc-hero-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .adress {
