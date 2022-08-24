@@ -150,6 +150,8 @@ ul {
 .hero {
   background-color: var(--bgc-hero-footer);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -208,11 +210,11 @@ ul {
 .flex-button {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .flex-button-item {
   margin-right: 8px;
-  margin-bottom: 50px;
 }
 
 .flex-button-item:last-child {
@@ -312,6 +314,8 @@ ul {
 .flex-team-element {
   width: 270px;
   margin-right: 30px;
+  background-color: var(--accent-white);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .flex-team-element:last-child {
@@ -366,6 +370,10 @@ ul {
   background-color: var(--bgc-hero-footer);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-contacts:not(:last-child){
+  margin-bottom: 9px;
 }
 
 .adress {
